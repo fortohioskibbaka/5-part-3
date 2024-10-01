@@ -10,7 +10,7 @@ namespace _5_part_3
             int score = 0;
             string answwer2;
             string answwer3;
-
+            string answwer4;
 
 
 
@@ -64,11 +64,11 @@ namespace _5_part_3
             Console.WriteLine(" D giraffe");
             answwer3 = Console.ReadLine().ToLower();
             Console.WriteLine("");
-             if (answwer3 == "d")
+            if (answwer3 == "d")
             {
                 Console.WriteLine("good job thats right another 10 points");
 
-                score =  score + 10;
+                score = score + 10;
 
 
 
@@ -84,7 +84,7 @@ namespace _5_part_3
 
 
             }
-            
+
 
 
 
@@ -98,10 +98,10 @@ namespace _5_part_3
 
 
             }
-           
 
 
-             if (answwer3 == "c  ")
+
+            if (answwer3 == "c  ")
             {
 
                 Console.WriteLine("nope a dog is not the tallest");
@@ -112,7 +112,31 @@ namespace _5_part_3
 
             }
             Console.WriteLine("this is your score  " + score);
+            Console.WriteLine("");
+            Console.WriteLine("ok last question hope your ready");
+            Console.WriteLine("");
+            Console.WriteLine("are you alive true or false");
+            answwer4 = Console.ReadLine().ToLower();
+            if(answwer4 == "true")
+            {
+                Console.WriteLine("good job thats right heres another 10 points");
 
+
+                score = score + 10;
+
+
+
+            }
+            else
+            {
+
+
+
+
+                Console.WriteLine(" nope not right you suck");
+                score = score;
+            }
+            Console.WriteLine("your final score is " + score);
         }
     }
 }
